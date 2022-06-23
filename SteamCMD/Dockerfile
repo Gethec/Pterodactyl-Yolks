@@ -18,4 +18,5 @@ RUN apt-get update && apt-get install -y \
 USER ${USER}
 
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash"]
+CMD ["/entrypoint.sh"]
