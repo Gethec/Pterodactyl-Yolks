@@ -15,4 +15,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get install lib32gcc-s1 steamcmd -y --no-install-recommends && \
     ln -s /usr/games/steamcmd /bin/steamcmd && \
     useradd ${USER} -d ${HOME}
-USER ${USER}
