@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 WORKDIR ${HOME}
 SHELL ["/bin/bash", "-c"]
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    iproute2 locales software-properties-common unzip wget && \
+    curl iproute2 locales software-properties-common unzip && \
     locale-gen --lang en_US.UTF-8 && \
     add-apt-repository multiverse && \
     dpkg --add-architecture i386 && \
